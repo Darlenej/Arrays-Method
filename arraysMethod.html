@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>Methods for Arrays</title>
+</head>
+<body>
+    <h1>Methods for Arrays</h1>
+    <p>This is my array</p>
+    <p id="display"></p>
+<button onclick="shiftVal()">Shift</button>
+<button onclick="unshiftVal()"button">Unshift</button>
+<input type="text"id="newItem"></input>
+
+
+<button onclick="pushVal()">Push</button>
+<button onclick="popVal()">Pop</button>
+<button onclick="clearVal()">Clear</button>
+
+
+
+<script>
+var months=["January","March","April","May","June"];
+display_me;
+
+
+
+function display_me(){
+    for(var i=0;i<months.length;i++){
+        return(months[i]);
+    }
+}
+
+function popVal(){
+for(var i=0;i<months.length;i++){
+months.pop();
+document.getElementById("display").innerHTML= months;
+}
+}
+
+function shiftVal(){
+for(var i=0;i<months.length;i++){
+months.shift();
+document.getElementById("display").innerHTML= months;
+}
+}
+
+
+function pushVal(){
+var answer=document.getElementById("newItem").value;
+    months.push(answer);
+// for(var i=0;i<months.length;i++){
+// answer+months.push();
+document.getElementById("display").innerHTML= months;
+
+}
+
+
+function unshiftVal(){
+var answer=document.getElementById("newItem").value;
+    months.unshift(answer);
+// for(var i=0;i<months.length;i++){
+// answer+months.push();
+document.getElementById("display").innerHTML= months;
+
+}
+function clearVal(){
+    var display_me= [];
+    document.getElementById("newItem").value='';
+    
+    
+
+document.getElementById("display").innerHTML= months;
+
+}
+// function unshiftVal(){
+// for(var i=0;i<months.length;i++){
+// months.unshift();
+// document.getElementById("display").innerHTML= months;
+// }
+// }
+document.getElementById("display").innerHTML= months;
+</script>
+
+
+</body>
+</html>
